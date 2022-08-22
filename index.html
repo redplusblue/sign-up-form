@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up!</title>
+</head>
+<body>
+    <section id="main">
+        <div id="image">
+            <div id="logo">
+                <img id="logo-image" src="files/odin-lined.png" alt="Odin Logo"><span id="logo-text">Odin</span>
+            </div>
+            <span id="credits">Photo by <a id="credits-link" href="https://unsplash.com/@jon_chng">
+                Jonathan Chng</a> on <a id="credits-link" href="https://unsplash.com/">Unsplash</a></span>
+        </div>
+        <div id="form-box">
+            <div id="welcome-text">
+                <p><b>
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+                        Sign up <em>now</em> to get started.
+                </b>
+                </p>
+                <p><b>You <em>know</em> you want to.</b></p>
+            </div>
+            <form action="post" id="form">
+                <div id="left-side">
+                    <h2>Let's do this!</h2>
+                    <label for="f-name" id="label">FIRST NAME*</label>
+                    <input type="text" name="first-name" id="f-name" required placeholder="Thor">
+                    <br>
+                    <label for="email" id="label">E-MAIL*</label>
+                    <input type="email" name="email" id="email" required placeholder="someone@example.com">
+                    <span id="email-validation">&nbsp;</span>
+                    <label for="password" id="label">PASSWORD*</label>
+                    <input type="password" name="password" id="password" required>
+                    <span id="password-validation"></span>
+                    <br>
+                </div>
+                <div id="right-side">
+                    <h1><br></h1>
+                    <label for="l-name" id="label">LAST NAME*</label>
+                    <input type="text" name="last-name" id="l-name" required placeholder="Odinson">
+                    <br>
+                    <label for="email" id="label">PHONE NUMBER*</label>
+                    <input type="tel" name="email" id="phone" required maxlength="10" minlength="10" placeholder="1234567890">
+                    <span id="phone-validation">&nbsp;</span>
+                    <label for="password" id="label">CONFIRM PASSWORD*</label>
+                    <input type="password" name="password" id="password" required>
+                    <span id="password-validation"></span>
+                    <br>
+                </div>
+            </form>
+            <button type="submit" id="submit-btn">Create Account</button>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

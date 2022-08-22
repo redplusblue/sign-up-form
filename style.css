@@ -1,0 +1,119 @@
+body {
+    background: rgba(0, 0, 0, 0.467);
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 95vh;
+}
+
+#image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    aspect-ratio: 0.6;
+    width: max(30%, 480px);
+    background: url(files/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    background: black;
+    opacity: 50%;
+    margin-top: 25vh;
+    margin-bottom: 50vh;
+    border: 2px black solid;
+    flex: 50%;
+}
+
+#logo-image {
+    aspect-ratio: 0.74;
+    height: 120px;
+}
+
+@font-face {
+    font-family: NorseBold;
+    src: url(files/Norse-Bold.otf) format("opentype");
+}
+
+#logo-text {
+    align-self: center;
+    font-size: 100px;
+    font-family: NorseBold;
+    color: white;
+}
+
+#credits {
+    font-size: 12px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.514);
+    font-family:'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+
+#credits > a:hover, #credits > a:visited, #credits > a:active {
+    text-decoration: underline;
+    color: white;
+}
+
+#form-box {
+    background: whitesmoke;
+    width: 40%;
+    border: green 2px solid;
+}
+
+#welcome-text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#label {
+    font-size: 12px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#form {
+    display: flex;
+	flex-direction: row;
+    gap: 6vw;
+    align-items: flex-start;
+    padding: 2% 5% 5% 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#left-side, #right-side{
+    display: flex;
+    flex-direction: column;
+}
+
+#f-name, #email, #password, #l-name, #phone {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);  
+}
+
+ #email:invalid, #password:invalid, #phone:invalid {
+    border: red solid 2px;
+}
+
+#submit-btn {
+    margin: 5% 5%;
+    padding: 2%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5%;
+    color: white;
+    border: 0px;
+    background-color: #596D48;
+}
+
+#submit-btn:hover {
+    opacity: 90%;
+    transform: translateY(-2px);
+}
+
+
