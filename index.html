@@ -36,7 +36,6 @@
                     <span id="email-validation">&nbsp;</span>
                     <label for="password" id="label">PASSWORD*</label>
                     <input type="password" name="password" id="password" required>
-                    <span id="password-validation"></span>
                     <br>
                 </div>
                 <div id="right-side">
@@ -47,13 +46,14 @@
                     <label for="email" id="label">PHONE NUMBER*</label>
                     <input type="tel" name="email" id="phone" required maxlength="10" minlength="10" placeholder="1234567890">
                     <span id="phone-validation">&nbsp;</span>
-                    <label for="password" id="label">CONFIRM PASSWORD*</label>
-                    <input type="password" name="password" id="password" required>
+                    <label for="conf-password" id="label">CONFIRM PASSWORD*</label>
+                    <input type="password" name="password" id="conf-password" required>
                     <span id="password-validation"></span>
                     <br>
                 </div>
             </form>
             <button type="submit" id="submit-btn">Create Account</button>
+            <p id="end-text">Already have an account? <a href="#" id="log-in">Log In</a>.</p>
         </div>
     </section>
 </body>

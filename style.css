@@ -93,12 +93,18 @@ body {
     flex-direction: column;
 }
 
-#f-name, #email, #password, #l-name, #phone {
+#f-name, #email, #password, #l-name, #phone, #conf-password {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);  
 }
 
- #email:invalid, #password:invalid, #phone:invalid {
+ #email:invalid, #password:invalid, #phone:invalid, #conf-password:invalid {
     border: red solid 2px;
+}
+
+#password-validation, #email-validation, #phone-validation {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: red;
 }
 
 #submit-btn {
@@ -116,4 +122,19 @@ body {
     transform: translateY(-2px);
 }
 
+#log-in {
+    text-decoration: underline;
+    color: #596D48;
+}
 
+#log-in:hover, #log-in:visited, #log-in:active {
+    text-decoration: none;
+    color: #596D48;
+}
+
+#end-text {
+    font-size: 14px;
+    margin-top: 0;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
